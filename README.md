@@ -1,71 +1,43 @@
-# Getting Started with Create React App
+<pre>
+      ( ^_^)  hi, I'm hidecs
+       /|\    ask me anything
+       / \    [ ... ]
+  ┌─────────────────────┐
+  │  ░░░░░░░░░░░░░░░░░░  │
+  └─────────────────────┘
+</pre>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # hidecs-chatbot
+
+An early scaffold for a conversational assistant for the HIDECS project, built on top of Create React App.
+
+## What it is
+
+This is the starting point for a chat interface meant to talk to a GPT-style API — the shell a front-end chatbot would be built inside. Right now it's the unmodified Create React App template: a single component, the default logo and styles, nothing wired up yet. No API key, request logic, or chat UI has been added — this repo does not ship or include any credentials.
+
+## Stack
+
+React 18, Create React App 5 (`react-scripts`), Jest/Testing Library for the default test setup.
+
+## Run locally
+
+```bash
+npm install
+npm start      # dev server at http://localhost:3000, hot reloads on save
+npm test       # interactive test runner
+npm run build  # production build to ./build
+```
+
+To build this into an actual chatbot, you'd add your own API key as an environment variable (never commit it) and wire a request layer into `src/App.js`.
+
+## Map
+
+```text
+src/
+├── App.js        # root component (currently the CRA starter screen)
+├── App.css
+├── index.js       # React entry point
+└── reportWebVitals.js, setupTests.js   # CRA defaults
+public/
+└── index.html, manifest.json, icons    # CRA static shell
+```
